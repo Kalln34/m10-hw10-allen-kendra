@@ -10,7 +10,8 @@
   --gray: #A1A1A1;
 }
 
-body {
+
+.column {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   font-size: 1.3rem;
@@ -29,24 +30,17 @@ h1, h2 {
   text-align: center;
 }
 
-a {
-  text-decoration: none;
-}
 
 a:hover {
   text-decoration: underline;
 }
 
-header {
+.header {
   background-color: var(--primary-color);
   padding: 48px 0;
   border-bottom: var(--secondary-color) 6px solid;
 }
 
-header a {
-  font-size: 1.5rem;
-  color: var(--off-white);
-}
 
 main a {
   color: var(--danger-color);
@@ -62,13 +56,20 @@ nav {
   display: flex;
 }
 
-nav > a:not(:first-of-type){
+.header__link{
   margin-left: 24px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: var(--off-white);
+  text-decoration: none;
 }
 
-nav > a.logo {
+.header__logo {
   margin-right: auto;
   text-transform: uppercase;
+  font-size: 1.5rem;
+  color: var(--off-white);
+  text-decoration: none;
 }
 
 main > section, main > article {
@@ -89,7 +90,7 @@ main > section.hero {
   text-align: center;
 }
 
-section.hero > .call-to-action {
+.hero, .call-to-action {
   font-size: 2rem;
   font-weight: 700;
   text-shadow: var(--white) 0px 0px 10px, var(--white) 0px 0px 20px, var(--gray) 2px 2px 2px;
@@ -112,7 +113,7 @@ main article {
 
 main p {
   line-height: 1.75;
-  margin-bottom: 48px;;
+  margin-bottom: 48px;
 }
 
 main > article img {
